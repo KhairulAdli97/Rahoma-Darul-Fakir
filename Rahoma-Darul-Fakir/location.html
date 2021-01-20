@@ -1,0 +1,284 @@
+<html>
+<head>
+<title>Rahoma Darul Fakir: Location</title>
+<meta charset="utf-8">
+<meta name = "viewport" content = "width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
+awesome/4.7.0/css/font-awesome.min.css">
+<style>
+	* {
+		box-sizing: border-box;
+	}
+	body {
+		font-family: Chaparral Pro;
+		text-align: center;
+		margin:0;
+	}
+	
+	/*Style the time*/
+	#time {
+		background-color: black;
+		color: white;
+		padding: 10px;
+		margin: 0;
+		text-align: left;
+		font-size:20px;
+	}
+
+	/*Style the header*/
+	header {
+		background-color: #fca72c;
+		text-align: center;
+		color: white;
+	}
+	.header {
+		width: 100%;
+	}
+
+	/*Container for flexboxes*/
+	section {
+		display: -webkit-flex;
+		display: flex;
+	}
+	/*Style the navigation menu*/
+	nav {
+		-webkit-flex: 1;
+		-ms-flex: 1;
+		flex: 1;
+		background-color: #655033;
+		padding: 0;
+	}
+	/* Style the sidenav links and the dropdown button */
+	.sidenav a, .dropdown-btn {
+  		padding: 6px 8px 6px 16px;
+  		text-decoration: none;
+  		font-size: 20px;
+  		color: white;
+  		display: block;
+  		border: none;
+  		background: none;
+  		width: 100%;
+  		text-align: left;
+  		cursor: pointer;
+  		outline: none;
+	}
+	/*On mouse-over*/
+	.sidenav a:hover, .dropdown-btn:hover {
+  		background-color: #B18D59;
+  		color: black;
+	}
+	/*Add an active class to the active dropdown button*/
+	.active{
+		background-color: #B18D59;
+		color: black;
+	}
+	/*Dropdown container (hidden by default). Optional: add a lighter background color and
+some left padding to change the design of the dropdown content*/
+	.dropdown-container {
+		display: none;
+		background-color:#CAA166;
+	}
+	/*Optional: Style the caret down icon*/
+	.fa-caret-down {
+		float: right;
+		padding-right: 8px;
+	}
+
+	/* Style the icon bar links */
+	.icon-bar a {
+  		display: inline-block;
+  		padding: 15px;
+  		transition: all 0.3s ease;
+  		color: black;
+  		font-size: 50px;
+		border-radius: 5px;
+	}
+
+	/* Style the social media icons with color, if you want */
+	.icon-bar a:hover {
+  		color: white;
+	}
+	
+	#icon1 {
+		position: relative;
+		margin-right: 13px;
+	}
+	
+	#icon2 {
+		position: relative;
+		margin-right: 21px;
+	}
+	
+	#icon3 {
+		position: relative;
+		margin-right: 14px;
+	}
+	
+	#icon4 {
+		position: relative;
+		margin-right: 11px;
+	}
+	
+	#icon5 {
+		position: relative;
+		margin-right: 15px;
+	}
+	
+	#icon6 {
+		position: relative;
+		margin-right: 21px;
+	}
+	
+	/*Style the content*/
+	article {
+		-webkit-flex: 3;
+		-ms-flex: 3;
+		flex: 3;
+		background-color: #B0741E;
+		padding: 20px;
+	}
+	
+	h1 {
+		font-size: 55px;
+		font-family: Cooper black;
+	}
+	
+	article p {
+		font-family:Tekton Pro;
+		font-size:25px;
+			
+	}
+	
+	/*Style the footer*/
+	footer {
+		background-color: #fba72b;
+		padding: 10px;
+		text-align: center;
+		color: black;
+		font-size:18px;
+	}
+
+	/*Style link in the footer*/
+	footer a:link {
+  		color: white;
+  		background-color: transparent;
+  		text-decoration: none;
+		font-weight:bold;
+	}
+	footer a:visited {
+  		color: white;
+  		background-color: transparent;
+ 		text-decoration: none;
+		font-weight:bold;
+	}
+	footer a:hover {
+  		color: blue;
+  		background-color: transparent;
+  		text-decoration: underline;
+		font-weight:bold;
+	}
+	footer a:active {
+  		color: black;
+  		background-color: transparent;
+  		text-decoration: underline;
+	}
+
+	/*Responsive layout - makes the menu and the content  (inside the section) sit on top of
+each other instead of next to each other*/
+	@media (max-width: 600px) {
+		section {
+			-webkit-flex-direction: column;
+			flex-direction: column;
+		}
+	}
+	/*Some media queries for responsiveness*/
+	@media screen and (max-height: 450px) {
+		.sidenav {padding-top: 15px;}
+		.sidenav a {font-size: 18 px;}
+	}
+</style>
+</head>
+<body>
+<!--Time Section-->
+<p id="time"></p>
+
+<!--Header Section-->
+<header>
+	<a href="index.html"><img id="up" class= "header" src="header.jpg" alt ="header"></a>
+</header>
+<!--Navigation Section-->
+<section>
+	<nav>
+		<div class="sidenav">
+			<a href="index.html"><i id="icon1" style="font-size:24px" class ="fa">&#xf015;</i><b>HOME</b></a>
+			<button class="dropdown-btn" style="font-family: Chaparral Pro"><i id="icon2" class="fa fa-user"></i><b>ABOUT</b><i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-container">
+				<a href="history.html">History</a>
+				<a href="objective.html">Objectives</a>
+				<a href="vision-and-mission.html">Vision and Mission</a>
+				<a href="organizational-chart.html">Organization Chart</a>
+			</div>
+			<button class="dropdown-btn" style="font-family: Chaparral Pro"><i id="icon3" class="fa fa-picture-o"></i><b>ACTIVITY</b><i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-container">
+				<a href="listactivity.html">List of Activities</a>
+				<a href="achievement.html">Achievement</a>
+			</div>
+			<a href="donation.html"><i id="icon4" style="font-size:24px" class="fa">&#xf004;</i><b>DONATION</b></a>
+			<a href="contact.html"><i id="icon5" style="font-size:24px" class="fa">&#xf098;</i><b>CONTACT US</b></a>
+			<a href="location.html"><i id="icon6" style="font-size:24px" class="fa">&#xf041;</i><b>LOCATION</b></a>
+		</div>
+<!-- The social media icon bar -->
+		<div class="icon-bar">
+  			<a href="https://web.facebook.com/PertubuhanRahomaDarulFakir/?_rdc=1&_rdr"><i class="fa fa-facebook-square"></i></a>
+  			<a href="mailto:darulfakir@yahoo.com"><i class="fa fa-envelope-square"></i></a>
+		</div>	
+	</nav>
+
+<!--Content Section-->	
+	<article>
+		<h1>Address</h1>
+		<p>&#128205; 15, Jalan Kent 3, Jalan Kent 3, Off Jalan Maktab, 54000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur, Malaysia</p>
+		
+		<br><br>
+		<p id="map"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.702834334387!2d101.72133154930876!3d3.1727221976785502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37e985fb340b%3A0x5f4deb81366ef922!2sPertubuhan%20Rahoma%20Darul%20Fakir%20Malaysia!5e0!3m2!1sen!2smy!4v1611047177763!5m2!1sen!2smy" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> </p>
+
+
+	</article>
+</section>
+<!--Footer Section-->
+<footer>
+	<p>Click here to <a href="#up"><i class="fa fa-caret-up"></i> Go up <i class="fa fa-caret-up"></i></a></p>
+	<p><b>Disclaimer: </b>This website is not an official website of Rahoma Darul Fakir. Click <a href="https://www.rahomadarulfakir.org/utama" target="_blank">Rahoma Darul Fakir</a> for the official website</p>
+	<p>Design by Khairul, Viviana & Tasha. Click here to know <a href="aboutme.html">About Us</a>. This website was developed for the purpose of learning HTML & CSS only.</p>  
+	<p>Recommended Browser Google Chrome Resolution 1366x768. Last Updated 20 January 2021.</p>
+</footer>
+
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This 
+allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  	dropdown[i].addEventListener("click", function() {
+  		this.classList.toggle("active");
+  		var dropdownContent = this.nextElementSibling;
+  		if (dropdownContent.style.display === "block") {
+  			dropdownContent.style.display = "none";
+  		} else {
+  			dropdownContent.style.display = "block";
+  		}
+  	});
+}
+
+/*The setFullYear() method sets the year of a date object*/
+
+var d = new Date();
+document.getElementById("time").innerHTML = d;
+
+
+</script>
+</body>
+</html>
